@@ -12,7 +12,7 @@
   <title>Lucas Toñanez — Research Portfolio</title>
   <script>
     (() => {
-      const saved = localStorage.getItem('theme');
+      const saved = localStorage.getItem('portfolioTheme');
       const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       document.documentElement.dataset.theme =
         saved === 'light' || saved === 'dark' ? saved : (systemDark ? 'dark' : 'light');
@@ -586,7 +586,7 @@ function applyTheme(theme) {
   themeColorMeta?.setAttribute('content', theme === 'dark' ? '#0d1013' : '#f6f4ef');
 }
 
-const savedTheme = localStorage.getItem('theme');
+const savedTheme = localStorage.getItem('portfolioTheme');
 applyTheme(
   savedTheme === 'light' || savedTheme === 'dark'
     ? savedTheme
@@ -594,7 +594,7 @@ applyTheme(
 );
 
 systemTheme.addEventListener?.('change', (event) => {
-  const manualTheme = localStorage.getItem('theme');
+  const manualTheme = localStorage.getItem('portfolioTheme');
   if (manualTheme !== 'light' && manualTheme !== 'dark') {
     applyTheme(event.matches ? 'dark' : 'light');
   }
@@ -603,7 +603,7 @@ systemTheme.addEventListener?.('change', (event) => {
 themeToggle?.addEventListener('click', () => {
   const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
   applyTheme(next);
-  localStorage.setItem('theme', next);
+  localStorage.setItem('portfolioTheme', next);
 });
 
 menuToggle?.addEventListener('click', () => {
