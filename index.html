@@ -388,7 +388,7 @@ footer { border-top: 1px solid var(--line); }
           <article class="research-card reveal">
             <div class="card-topline">
               <span class="pill experience">Research experience</span>
-              <span class="year">2026</span>
+              <span class="year">2026 — Present</span>
             </div>
             <h3>Vision-Language-Action Robotics</h3>
             <p class="card-subtitle">OpenPI π0.5 · LeRobot · ROS2 · Real-robot evaluation</p>
@@ -397,6 +397,34 @@ footer { border-top: 1px solid var(--line); }
               LeRobot-compatible recording, success/failure feedback, multi-episode workflows, and investigating how rollout data could support later adaptation.
             </p>
             <div class="tag-row"><span>VLA</span><span>Robot rollouts</span><span>LeRobot</span><span>OpenPI</span></div>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-topline">
+              <span class="pill current">Current research</span>
+              <span class="year">2026</span>
+            </div>
+            <h3>Self-Evolving Video Annotation</h3>
+            <p class="card-subtitle">Qwen3-VL · Annotator/Corrector · Temporal grounding</p>
+            <p>
+              Built a pinned Qwen3-VL-8B Annotator/Corrector video-annotation pipeline with a Qwen2.5-VL baseline, frozen-draft evaluation and 100+ contract tests.
+              Audited the temporal Corrector and designed a frame-cited boundary-evidence protocol; a small four-call pilot avoided a harmful edit but made no corrective edits.
+            </p>
+            <div class="tag-row"><span>VLMs</span><span>Video annotation</span><span>Evaluation</span><span>Reproducibility</span></div>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-topline">
+              <span class="pill current">Current research</span>
+              <span class="year">2026</span>
+            </div>
+            <h3>Few-Shot Esports Event Spotting</h3>
+            <p class="card-subtitle">Frozen CLIP · R3D-18 · Event mAP · Dota 2</p>
+            <p>
+              Built a few-shot event-spotting benchmark on Dota 2 gameplay video with replay-log-aligned labels, temporal context features, background rejection and sealed, match-disjoint holdouts.
+              On four unused matches, a validation-tuned background penalty raised Mars event mAP (±1 s) from 0.247 to 0.293; false alarms remain high.
+            </p>
+            <div class="tag-row"><span>Few-shot</span><span>Event detection</span><span>CLIP</span><span>Held-out evaluation</span></div>
           </article>
 
           <article class="research-card reveal">
@@ -451,7 +479,7 @@ footer { border-top: 1px solid var(--line); }
             <p class="section-kicker">03 · Selected projects</p>
             <h2>Projects that show<br />how I build and evaluate.</h2>
           </div>
-          <p class="section-intro">A selection of public projects across computer vision, machine learning, time-series forecasting, and full-stack development.</p>
+          <p class="section-intro">A selection of projects across computer vision, machine learning, time-series modeling, and full-stack and backend development.</p>
         </div>
 
         <div class="projects-grid">
@@ -489,6 +517,20 @@ footer { border-top: 1px solid var(--line); }
             <p>Full-stack marketplace with authentication, product browsing, protected routes, and MongoDB-backed account functionality.</p>
             <div class="project-footer"><span>React · Node.js · MongoDB</span><span>↗</span></div>
           </a>
+
+          <a class="project-card reveal" href="https://github.com/Mindful-AI-SD/Mindful-AI" target="_blank" rel="noreferrer">
+            <span class="project-index">06</span>
+            <h3>Mindful AI — Backend</h3>
+            <p>UCF senior design: authenticated Supabase Edge Functions for AI-generated responses, idempotent persistence behind PostgreSQL row-level security, migrations and integration tests.</p>
+            <div class="project-footer"><span>Supabase · PostgreSQL · TypeScript</span><span>↗</span></div>
+          </a>
+
+          <div class="project-card reveal">
+            <span class="project-index">07</span>
+            <h3>Gas Price Movement Classification</h3>
+            <p>Course project (CAP 5610): MLP, 1D CNN, LSTM and Transformer on 142,818 leakage-safe French station–fuel sequences; Transformer reached 0.666 validation macro-F1 vs 0.635 for logistic regression.</p>
+            <div class="project-footer"><span>PyTorch · Time series</span><span></span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -498,13 +540,13 @@ footer { border-top: 1px solid var(--line); }
         <div class="section-head reveal">
           <div>
             <p class="section-kicker">04 · Experience</p>
-            <h2>Research trajectory.</h2>
+            <h2>Research and engineering.</h2>
           </div>
         </div>
 
         <div class="timeline">
           <article class="timeline-item reveal">
-            <div class="timeline-date">2026 — Present</div>
+            <div class="timeline-date">Dec 2025 — Present</div>
             <div class="timeline-content">
               <h3>Undergraduate Researcher</h3>
               <p class="timeline-org">UCF Institute for Artificial Intelligence · Orlando, FL</p>
@@ -512,11 +554,19 @@ footer { border-top: 1px solid var(--line); }
             </div>
           </article>
           <article class="timeline-item reveal">
-            <div class="timeline-date">2026</div>
+            <div class="timeline-date">2026 — Present</div>
             <div class="timeline-content">
               <h3>VLA Robotics Research</h3>
               <p class="timeline-org">UCF · Real-robot policy evaluation</p>
               <p>Worked with OpenPI π0.5, LeRobot, ROS2, and a Piper robot arm to develop and validate autonomous rollout-recording and feedback workflows.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Sep 2024 — Present</div>
+            <div class="timeline-content">
+              <h3>Software Engineering Intern, AI &amp; Automation</h3>
+              <p class="timeline-org">Tecalemit Inc. · Remote</p>
+              <p>Builds internal tools and REST API integrations, and prototypes AI-assisted customer-service and sales workflows with OpenAI APIs, structured product context and email handoffs.</p>
             </div>
           </article>
           <article class="timeline-item reveal">
@@ -542,10 +592,10 @@ footer { border-top: 1px solid var(--line); }
 
         <div class="tool-grid reveal">
           <div class="tool-group"><h3>Languages</h3><p>Python · Java · JavaScript · TypeScript · SQL · HTML · CSS</p></div>
-          <div class="tool-group"><h3>AI / ML</h3><p>PyTorch · scikit-learn · Hugging Face · Qwen / Qwen3-VL · DINOv2 · RAFT</p></div>
+          <div class="tool-group"><h3>AI / ML</h3><p>PyTorch · scikit-learn · Hugging Face · Qwen / Qwen3-VL · CLIP · DINOv2 · RAFT</p></div>
           <div class="tool-group"><h3>Video / Vision</h3><p>OpenCV · FFmpeg · Temporal grounding · Multimodal evaluation · Video pipelines</p></div>
           <div class="tool-group"><h3>Robotics / Systems</h3><p>OpenPI · LeRobot · ROS2 · Linux · CUDA · Git · GitHub</p></div>
-          <div class="tool-group"><h3>Web / APIs</h3><p>React · Node.js · Express · MongoDB · FastAPI · Flask · REST APIs</p></div>
+          <div class="tool-group"><h3>Web / APIs</h3><p>React · Node.js · Express · MongoDB · Supabase · PostgreSQL · FastAPI · Flask · REST APIs</p></div>
         </div>
       </div>
     </section>
@@ -554,7 +604,7 @@ footer { border-top: 1px solid var(--line); }
       <div class="container contact-inner reveal">
         <p class="section-kicker">06 · Connect</p>
         <h2>Research, collaboration,<br />and what comes next.</h2>
-        <p>I’m interested in conversations around multimodal AI, video understanding, computer vision, and embodied AI.</p>
+        <p>I’m interested in conversations around multimodal AI, video understanding, computer vision, and embodied AI. I’m open to Summer 2027 internships and 2027 new-grad roles.</p>
         <div class="contact-links">
           <a class="button primary" href="https://www.linkedin.com/in/lucastonanez/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
           <a class="button secondary" href="https://github.com/LucasTonanez" target="_blank" rel="noreferrer">View GitHub</a>
